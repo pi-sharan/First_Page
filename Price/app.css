@@ -8,14 +8,16 @@ html,body{
     width:100%;
     height:100%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center;
+    
+    align-items: center; */
     background-color: #60a9ff;
-    align-items: center;
 }
 
 .panel{
     display: flex;
     flex-direction: row;
+    margin:auto;
     justify-content: space-evenly;
     min-height: 600px;
     max-height: 730px; 
@@ -42,7 +44,7 @@ img{
     display: flex;
     min-width: 0;
     min-height: 0;
-    max-width: 80%;
+    max-width: 90%;
 }
 
 .image-text{
@@ -103,11 +105,37 @@ img{
     text-transform: uppercase;
     color: #016ff9;
     padding : 0 3.5em;
+    min-width: 200px;
+    min-height: 50px;
     border-radius: 1em;
 }
+
+.pricing-plan>div:nth-of-type(2){
+    border-top:1.5px solid grey;
+    border-bottom:1.5px solid grey;
+}
+
+.pricing-plan>div:nth-of-type(3){
+    /* border-top:1.5px solid grey; */
+    border-bottom:1.5px solid grey;
+}
+
 
 .pricing-plan:nth-of-type(2) a{
     background-color:#48aaff;
     color: white;
 }
 
+
+
+@media (max-width:900px){
+    *{
+        overflow: auto;
+    }
+    .panel{
+        flex-direction: column;
+        max-height: 7000px;
+        width:100%;
+    }
+
+}
