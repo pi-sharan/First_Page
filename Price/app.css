@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,body{
+    margin:0;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    background-color: #60a9ff;
+    align-items: center;
+}
+
+.panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: 600px;
+    max-height: 730px; 
+    font-size: 9px;
+    background-color: white;
+    padding:0.6em;
+    max-width: 900px;
+    min-width: 0;
+    border-radius:1em;
+}
+
+.pricing-plan{
+    padding:0.6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-plan:nth-of-type(1), .pricing-plan:nth-of-type(2){
+    margin-right: 0.6em;
+}
+
+img{
+    display: flex;
+    min-width: 0;
+    min-height: 0;
+    max-width: 80%;
+}
+
+.image-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 40%;
+    font-size: 15px;
+    color:grey;
+    padding: 1.2em;
+}
+
+.pricing-plan>div:nth-of-type(2), .pricing-plan>div:nth-of-type(3){
+    display: flex;
+    flex-basis:10%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    justify-content: center;
+    text-transform: uppercase;
+    padding:1em;
+    color: #016ff9;
+    font-weight: 530;
+    max-width: 200px;
+}
+
+.btn-cost{
+    display: flex;
+    flex-basis:40%;
+    flex-direction: column;
+    align-items: center;
+    padding:2em;
+}
+
+.btn-cost>span{
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size:300%;
+    text-transform: uppercase;
+    color: #016ff9;
+    font-weight: 700;
+}
+
+.btn-cost>a{
+    display: flex;
+    flex-basis: 25%;
+    
+    align-items: center;
+    justify-content: center;
+    
+    border:1px solid #9dd1ff;
+    font-size:100%;
+    text-transform: uppercase;
+    color: #016ff9;
+    padding : 0 3.5em;
+    border-radius: 1em;
+}
+
+.pricing-plan:nth-of-type(2) a{
+    background-color:#48aaff;
+    color: white;
+}
+
